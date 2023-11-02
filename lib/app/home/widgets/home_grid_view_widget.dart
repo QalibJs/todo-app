@@ -25,6 +25,7 @@ class HomeGridViewWidget extends StatelessWidget {
                 return HomeGridTileWidget(
                   datas: datas.notes,
                   index: index,
+                  homeModel: homeModel, title: datas.title,
                 );
               },
             ),

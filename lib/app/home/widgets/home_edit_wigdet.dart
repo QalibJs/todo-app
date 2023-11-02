@@ -5,15 +5,24 @@ import 'package:todo/constant/app_paddings.dart';
 import 'package:todo/constant/app_text_style.dart';
 
 class HomeEditWidget extends StatelessWidget {
-  const HomeEditWidget({super.key});
+  final String title;
+  const HomeEditWidget({
+    super.key,
+    required this.title,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(
-          "basliq",
-          style: AppTextStyle.headerNotes,
+        SizedBox(
+          width: 100,
+          child: Text(
+            title,
+            style: title.length < 6
+                ? AppTextStyle.headerNotes
+                : AppTextStyle.overFlowedHeaderNotes,
+          ),
         ),
         const Spacer(),
         Container(
@@ -22,7 +31,7 @@ class HomeEditWidget extends StatelessWidget {
           child: Icon(
             Icons.edit,
             size: 16,
-            color: Appcolors.white,
+            color: AppColors.white,
           ),
         ),
       ],

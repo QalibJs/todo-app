@@ -9,9 +9,9 @@ class AppBoxDecoration {
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [
-            Appcolors.blue,
-            Appcolors.purple,
-            Appcolors.red,
+            AppColors.blue,
+            AppColors.purple,
+            AppColors.red,
           ],
         ),
       );
@@ -22,12 +22,12 @@ class AppBoxDecoration {
       );
 
   static BoxDecoration get ppDec => BoxDecoration(
-        color: Appcolors.white,
+        color: AppColors.white,
         borderRadius: BorderRadius.circular(50),
       );
 
   static BoxDecoration get addButton => BoxDecoration(
-        border: Border.all(color: Appcolors.white),
+        border: Border.all(color: AppColors.white),
         borderRadius: BorderRadius.circular(50),
       );
   static BoxDecoration get noteBoxes => BoxDecoration(
@@ -36,9 +36,9 @@ class AppBoxDecoration {
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [
-            Appcolors.blue,
-            Appcolors.purple,
-            Appcolors.red,
+            AppColors.blue,
+            AppColors.purple,
+            AppColors.red,
           ],
         ),
       );

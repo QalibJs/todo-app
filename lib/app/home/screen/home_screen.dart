@@ -9,9 +9,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Appcolors.black,
+      backgroundColor: AppColors.black,
       appBar: AppBar(
-        backgroundColor: Appcolors.black,
+        backgroundColor: AppColors.black,
         elevation: 0,
       ),
       body: const Column(

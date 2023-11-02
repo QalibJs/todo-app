@@ -9,10 +9,10 @@ class HomeModel {
   static List<HomeModel> model = [
     HomeModel(notes: "HGVCKHGSVGHXVKSHGVXSHGVXKHSGVX", title: "AZERBAYCAN"),
     HomeModel(notes: "notsdcsdcaes", title: "BAKI"),
+    HomeModel(notes: "notemdscbkjsdbkcjsdbccsdCSDCCsdcs", title: "NewYork"),
     HomeModel(
         notes:
-            "noadskbcksdbcljhsbdcjksDCJHBVKSJDHBCJSHDBCKJHSDBCKJSDHBChdbckjsdhbckjsdbckajsdhbcjsdctes",
-        title: "NEW YORk"),
-    HomeModel(notes: "notemdscbkjsdbkcjsdbccsdCSDCCsdcs", title: "SALYAN"),
+            "vdsgaavsghKVCGhadsshdgvckhsgdVCKHDGSvdsgaavsghKVCGhadsshdgvckhsgdVCKHDGSvdsgaavsghKVCGhadsshdgvckhsgdVCKHDGS",
+        title: "SALYAN"),
   ];
 }

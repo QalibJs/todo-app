@@ -33,7 +33,7 @@ class HomeSecondHeaderWidget extends StatelessWidget {
               decoration: AppBoxDecoration.addButton,
               child: Icon(
                 Icons.add_outlined,
-                color: Appcolors.white,
+                color: AppColors.white,
               ),
             ),
           )
