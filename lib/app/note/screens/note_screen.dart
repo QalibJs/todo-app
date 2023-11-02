@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo/app/note/widgets/note_app_bar_widget.dart';
+import 'package:todo/app/note/widgets/note_full_widget.dart';
 import 'package:todo/constant/app_colors.dart';
 
 class NoteScreen extends StatelessWidget {
@@ -14,7 +15,7 @@ class NoteScreen extends StatelessWidget {
           toolbarHeight: 100,
           foregroundColor: AppColors.white,
           title: const NoteAppBarWidget()),
-      body: Container(),
+      body: const NoteFullWidget(),
     );
   }
 }
