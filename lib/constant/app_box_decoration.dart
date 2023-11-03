@@ -20,6 +20,15 @@ class AppBoxDecoration {
           image: AssetImage(asset),
         ),
       );
+  static BoxDecoration get button => BoxDecoration(
+        borderRadius: BorderRadius.circular(12),
+        gradient: LinearGradient(
+          colors: [
+            AppColors.darkBlue,
+            AppColors.purple,
+          ],
+        ),
+      );
 
   static BoxDecoration get ppDec => BoxDecoration(
         color: AppColors.white,
@@ -36,7 +45,7 @@ class AppBoxDecoration {
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [
-            AppColors.blue,
+            AppColors.darkBlue,
             AppColors.purple,
             AppColors.red,
           ],

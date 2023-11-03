@@ -38,8 +38,8 @@ class _GlobalInputWidgetState extends State<GlobalInputWidget> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      maxLines: widget.maxLines,
       style: AppTextStyle.smallText,
-      maxLength: widget.maxLines,
       onTap: () => widget.onTap,
       obscuringCharacter: "*",
       obscureText: isSecure ? false : (widget.isPassword! ? true : false),
