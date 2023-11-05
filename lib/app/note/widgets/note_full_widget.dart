@@ -11,16 +11,14 @@ class NoteFullWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: AppPaddings.all12,
-      child: const SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            NoteTopWidget(),
-            NoteInputWidget(),
-            NoteButtonWidget(),
-          ],
-        ),
+      child: const Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          NoteTopWidget(),
+          NoteInputWidget(),
+          NoteButtonWidget(),
+        ],
       ),
     );
   }

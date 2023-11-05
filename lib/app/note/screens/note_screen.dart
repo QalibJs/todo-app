@@ -11,10 +11,11 @@ class NoteScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.black,
       appBar: AppBar(
-          backgroundColor: AppColors.black,
-          toolbarHeight: 100,
-          foregroundColor: AppColors.white,
-          title: const NoteAppBarWidget()),
+        backgroundColor: AppColors.black,
+        toolbarHeight: 100,
+        foregroundColor: AppColors.white,
+        title: const NoteAppBarWidget(),
+      ),
       body: const NoteFullWidget(),
     );
   }

@@ -11,7 +11,7 @@ class NoteButtonWidget extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width,
       height: 65,
-      decoration:AppBoxDecoration.button,
+      decoration: AppBoxDecoration.button,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.transparent,
@@ -19,7 +19,10 @@ class NoteButtonWidget extends StatelessWidget {
             borderRadius: BorderRadius.circular(10),
           ),
         ),
-        child: Text("Add", style: AppTextStyle.headerNotes,),
+        child: Text(
+          "Add",
+          style: AppTextStyle.headerNotes,
+        ),
         onPressed: () {},
       ),
     );
