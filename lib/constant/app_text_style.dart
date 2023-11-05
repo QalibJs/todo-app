@@ -30,7 +30,7 @@ class AppTextStyle {
       );
   static TextStyle get smallText => TextStyle(
         fontSize: 11.5.sp,
-        fontWeight: FontWeight.bold,
+        fontWeight: FontWeight.w500,
         color: AppColors.white,
       );
 }

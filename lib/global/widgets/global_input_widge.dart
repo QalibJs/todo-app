@@ -9,7 +9,6 @@ class GlobalInputWidget extends StatefulWidget {
   final Widget? suffixIcon;
   final int? maxLines;
   final Widget? prefixIcon;
-  final bool? isPassword;
   final TextEditingController? controller;
   final TextInputType? inputType;
   final String? Function(String?)? validator;
@@ -20,7 +19,6 @@ class GlobalInputWidget extends StatefulWidget {
     required this.hintText,
     this.suffixIcon,
     this.prefixIcon,
-    this.isPassword,
     this.controller,
     this.inputType,
     this.validator,
@@ -34,7 +32,6 @@ class GlobalInputWidget extends StatefulWidget {
 }
 
 class _GlobalInputWidgetState extends State<GlobalInputWidget> {
-  bool isSecure = false;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -42,7 +39,6 @@ class _GlobalInputWidgetState extends State<GlobalInputWidget> {
       style: AppTextStyle.smallText,
       onTap: () => widget.onTap,
       obscuringCharacter: "*",
-      obscureText: isSecure ? false : (widget.isPassword! ? true : false),
       inputFormatters: widget.inputFormatters,
       keyboardType: widget.inputType,
       validator: (value) => widget.validator!(value),
@@ -52,20 +48,6 @@ class _GlobalInputWidgetState extends State<GlobalInputWidget> {
       decoration: InputDecoration(
         hintStyle: AppTextStyle.smallText,
         prefixIcon: widget.prefixIcon,
-        suffix: widget.isPassword!
-            ? GestureDetector(
-                onTap: () {
-                  setState(() {});
-                  isSecure = !isSecure;
-                },
-                child: Icon(
-                  isSecure
-                      ? Icons.visibility_outlined
-                      : Icons.visibility_off_outlined,
-                  size: 19,
-                ),
-              )
-            : null,
         hintText: widget.hintText,
         border: AppInputStyleWidget.boder,
       ),

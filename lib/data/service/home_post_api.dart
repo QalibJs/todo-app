@@ -1,7 +1,8 @@
 import 'package:dio/dio.dart';
+import 'package:todo/locator/locator.dart';
 
 class HomePostService {
-  static Dio dio = Dio();
+  static Dio dio = locator.get<Dio>();
 
   static Future postService({
     required String title,

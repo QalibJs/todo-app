@@ -1,7 +1,8 @@
 import 'package:dio/dio.dart';
+import 'package:todo/locator/locator.dart';
 
 class HomeDeleteService {
-  static Dio dio = Dio();
+  static Dio dio = locator.get<Dio>();
 
   static Future putDatas() async {
     Response response = await dio.delete("path");
