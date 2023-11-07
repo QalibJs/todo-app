@@ -9,7 +9,7 @@ class NoteTopWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       AppTexts.notes,
-      style: AppTextStyle.headerNotes,
+      style: AppTextStyle.headerNotes(context),
     );
   }
 }

@@ -20,14 +20,14 @@ class HomeEditWidget extends StatelessWidget {
           child: Text(
             title,
             style: title.length < 6
-                ? AppTextStyle.headerNotes
-                : AppTextStyle.overFlowedHeaderNotes,
+                ? AppTextStyle.headerNotes(context).copyWith(color: AppColors.white)
+                : AppTextStyle.overFlowedHeaderNotes(context).copyWith(color: AppColors.white),
           ),
         ),
         const Spacer(),
         Container(
           padding: AppPaddings.all3,
-          decoration: AppBoxDecoration.addButton,
+          decoration: AppBoxDecoration.addButton(context),
           child: Icon(
             Icons.edit,
             size: 16,

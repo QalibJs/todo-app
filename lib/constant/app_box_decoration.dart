@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'app_colors.dart';
+import 'package:todo/constant/app_colors.dart';
 
 class AppBoxDecoration {
   AppBoxDecoration._();
@@ -30,13 +30,13 @@ class AppBoxDecoration {
         ),
       );
 
-  static BoxDecoration get ppDec => BoxDecoration(
-        color: AppColors.white,
+  static BoxDecoration  ppDec(context) => BoxDecoration(
+        color: Theme.of(context).colorScheme.background,
         borderRadius: BorderRadius.circular(50),
       );
 
-  static BoxDecoration get addButton => BoxDecoration(
-        border: Border.all(color: AppColors.white),
+  static BoxDecoration  addButton(context) => BoxDecoration(
+        border: Border.all(color: Theme.of(context).colorScheme.background),
         borderRadius: BorderRadius.circular(50),
       );
   static BoxDecoration get noteBoxes => BoxDecoration(

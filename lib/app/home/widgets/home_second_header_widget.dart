@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo/app/note/screens/note_screen.dart';
 import 'package:todo/constant/app_box_decoration.dart';
-import 'package:todo/constant/app_colors.dart';
 import 'package:todo/constant/app_navigator.dart';
 import 'package:todo/constant/app_paddings.dart';
 import 'package:todo/constant/app_text.dart';
@@ -18,7 +17,7 @@ class HomeSecondHeaderWidget extends StatelessWidget {
         children: [
           Text(
             AppTexts.noteBooks,
-            style: AppTextStyle.headerText,
+            style: AppTextStyle.headerText(context),
           ),
           const Spacer(),
           GestureDetector(
@@ -30,10 +29,10 @@ class HomeSecondHeaderWidget extends StatelessWidget {
             },
             child: Container(
               alignment: Alignment.center,
-              decoration: AppBoxDecoration.addButton,
+              decoration: AppBoxDecoration.addButton(context).copyWith(border: Border.all(color: Theme.of(context).colorScheme.primary)),
               child: Icon(
                 Icons.add_outlined,
-                color: AppColors.white,
+                color: Theme.of(context).colorScheme.primary,
               ),
             ),
           )

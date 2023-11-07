@@ -15,6 +15,7 @@ class NoteInputWidget extends StatelessWidget {
       child: SizedBox(
         width: MediaQuery.of(context).size.width,
         child: GlobalInputWidget(
+          
           controller: noteCubit.noteController,
           hintText: AppTexts.write,
           maxLines: 50,

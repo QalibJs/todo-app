@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
 import 'package:todo/cubit/notes/note_cubit.dart';
+import 'package:todo/theme/theme.dart';
 import 'app/home/screen/home_screen.dart';
 
 class MyApp extends StatelessWidget {
@@ -10,8 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Sizer(
-      builder: (BuildContext context, Orientation orientation,
-          DeviceType deviceType) {
+      builder: (
+        BuildContext context,
+        Orientation orientation,
+        DeviceType deviceType,
+      ) {
         return MultiBlocProvider(
           providers: [
             BlocProvider(
@@ -21,10 +25,8 @@ class MyApp extends StatelessWidget {
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
-            theme: ThemeData(
-              colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-              useMaterial3: true,
-            ),
+            theme: lightMode,
+            darkTheme: darkMode,
             home: const HomeScreen(),
           ),
         );

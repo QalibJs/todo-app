@@ -24,7 +24,7 @@ class HomeEmptyDataWidget extends StatelessWidget {
         AppSizedBox.h20,
         Text(
           AppTexts.empty,
-          style: AppTextStyle.headerNotes,
+          style: AppTextStyle.headerNotes(context),
         ),
       ],
     );

@@ -7,7 +7,6 @@ import 'package:todo/constant/app_text_style.dart';
 
 class HomeHiWidget extends StatelessWidget {
   const HomeHiWidget({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -16,15 +15,20 @@ class HomeHiWidget extends StatelessWidget {
         children: [
           Text(
             AppTexts.hi,
-            style: AppTextStyle.headerText,
+            style: AppTextStyle.headerText(context),
           ),
           const Spacer(),
           Container(
             width: 6.h,
             alignment: Alignment.center,
             height: 6.h,
-            decoration: AppBoxDecoration.ppDec,
-            child:  const Icon(Icons.verified_user,),
+            decoration: AppBoxDecoration.ppDec(context).copyWith(
+              color: Theme.of(context).colorScheme.background,
+            ),
+            child: Icon(
+              Icons.verified_user,
+              color: Theme.of(context).colorScheme.primary,
+            ),
           ),
         ],
       ),

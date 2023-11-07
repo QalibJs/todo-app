@@ -7,4 +7,5 @@ class AppTexts {
   static String get write => "Write something...";
   static String get empty => "Not any information";
   static String get title => "Title";
+  static String get add =>"Add";
 }

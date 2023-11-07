@@ -5,32 +5,42 @@ import 'package:todo/constant/app_colors.dart';
 class AppTextStyle {
   AppTextStyle._();
 
-  static TextStyle get headerText => TextStyle(
-      fontSize: 18.5.sp, fontWeight: FontWeight.bold, color: AppColors.white);
-  static TextStyle get homeNotes => TextStyle(
+  static TextStyle headerText(context) => TextStyle(
+        fontSize: 18.5.sp,
+        fontWeight: FontWeight.bold,
+        color: Theme.of(context).colorScheme.primary,
+      );
+
+  static TextStyle homeNotes(context) => TextStyle(
         fontSize: 8.5.sp,
         fontWeight: FontWeight.bold,
-        color: AppColors.white,
+        color: Theme.of(context).colorScheme.primary,
       );
-  static TextStyle get overFlowedHomeNotes => TextStyle(
-      fontSize: 8.5.sp,
-      fontWeight: FontWeight.bold,
-      color: AppColors.white,
-      overflow: TextOverflow.ellipsis);
-  static TextStyle get headerNotes => TextStyle(
-        fontSize: 14.5.sp,
+  static TextStyle overFlowedHomeNotes(context) => TextStyle(
+        fontSize: 8.5.sp,
         fontWeight: FontWeight.bold,
-        color: AppColors.white,
-      );
-  static TextStyle get overFlowedHeaderNotes => TextStyle(
-        fontSize: 14.5.sp,
-        fontWeight: FontWeight.bold,
-        color: AppColors.white,
+        color: Theme.of(context).colorScheme.primary,
         overflow: TextOverflow.ellipsis,
       );
-  static TextStyle get smallText => TextStyle(
+  static TextStyle headerNotes(context) => TextStyle(
+        fontSize: 14.5.sp,
+        fontWeight: FontWeight.bold,
+        color: Theme.of(context).colorScheme.primary,
+      );
+  static TextStyle get buttonText => TextStyle(
+        fontSize: 14.5.sp,
+        fontWeight: FontWeight.bold,
+        color: AppColors.white,
+      );
+  static TextStyle overFlowedHeaderNotes(context) => TextStyle(
+        fontSize: 14.5.sp,
+        fontWeight: FontWeight.bold,
+        color: Theme.of(context).colorScheme.primary,
+        overflow: TextOverflow.ellipsis,
+      );
+  static TextStyle smallText(context) => TextStyle(
         fontSize: 11.5.sp,
         fontWeight: FontWeight.w500,
-        color: AppColors.white,
+        color: Theme.of(context).colorScheme.primary,
       );
 }

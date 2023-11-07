@@ -35,8 +35,9 @@ class _GlobalInputWidgetState extends State<GlobalInputWidget> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      
       maxLines: widget.maxLines,
-      style: AppTextStyle.smallText,
+      style: AppTextStyle.smallText(context),
       onTap: () => widget.onTap,
       obscuringCharacter: "*",
       inputFormatters: widget.inputFormatters,
@@ -45,8 +46,10 @@ class _GlobalInputWidgetState extends State<GlobalInputWidget> {
       controller: widget.controller,
       textInputAction: TextInputAction.done,
       cursorColor: AppColors.white,
+      
       decoration: InputDecoration(
-        hintStyle: AppTextStyle.smallText,
+        
+        hintStyle: AppTextStyle.smallText(context),
         prefixIcon: widget.prefixIcon,
         hintText: widget.hintText,
         border: AppInputStyleWidget.boder,

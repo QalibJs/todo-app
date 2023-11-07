@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo/constant/app_colors.dart';
 import 'package:todo/constant/app_text_style.dart';
 
 class HomeNotesWidget extends StatelessWidget {
@@ -13,8 +14,8 @@ class HomeNotesWidget extends StatelessWidget {
     return Text(
       datas,
       style: datas.length < 120
-          ? AppTextStyle.homeNotes
-          : AppTextStyle.overFlowedHomeNotes,
+          ? AppTextStyle.homeNotes(context).copyWith(color: AppColors.white)
+          : AppTextStyle.overFlowedHomeNotes(context).copyWith(color: AppColors.white),
     );
   }
 }

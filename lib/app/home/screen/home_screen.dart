@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo/app/home/widgets/home_grid_view_widget.dart';
 import '../widgets/home_header_widget.dart';
-import '../../../constant/app_colors.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,9 +8,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.black,
+      backgroundColor: Theme.of(context).colorScheme.background,
       appBar: AppBar(
-        backgroundColor: AppColors.black,
+        backgroundColor: Theme.of(context).colorScheme.background,
         elevation: 0,
       ),
       body: const Column(

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo/app/note/widgets/note_app_bar_widget.dart';
 import 'package:todo/app/note/widgets/note_full_widget.dart';
-import 'package:todo/constant/app_colors.dart';
 
 class NoteScreen extends StatelessWidget {
   const NoteScreen({super.key});
@@ -9,11 +8,12 @@ class NoteScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.black,
+      backgroundColor: Theme.of(context).colorScheme.background,
       appBar: AppBar(
-        backgroundColor: AppColors.black,
+        elevation: 0,
+        backgroundColor: Theme.of(context).colorScheme.background,
         toolbarHeight: 100,
-        foregroundColor: AppColors.white,
+        foregroundColor: Theme.of(context).colorScheme.primary,
         title: const NoteAppBarWidget(),
       ),
       body: const NoteFullWidget(),

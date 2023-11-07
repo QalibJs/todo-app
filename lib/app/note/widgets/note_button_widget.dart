@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo/constant/app_box_decoration.dart';
 import 'package:todo/constant/app_colors.dart';
+import 'package:todo/constant/app_text.dart';
 import 'package:todo/constant/app_text_style.dart';
 
 class NoteButtonWidget extends StatelessWidget {
@@ -14,14 +15,11 @@ class NoteButtonWidget extends StatelessWidget {
       decoration: AppBoxDecoration.button,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: AppColors.transparent,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10),
-          ),
+          backgroundColor: AppColors.transparent,          
         ),
         child: Text(
-          "Add",
-          style: AppTextStyle.headerNotes,
+          AppTexts.add,
+          style: AppTextStyle.buttonText,
         ),
         onPressed: () {},
       ),

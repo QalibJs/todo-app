@@ -14,6 +14,7 @@ class NoteAppBarWidget extends StatelessWidget {
     return Column(
       children: [
         SizedBox(
+          
           width: MediaQuery.of(context).size.width,
           child: GlobalInputWidget(
             controller: noteCubit.titleController,
