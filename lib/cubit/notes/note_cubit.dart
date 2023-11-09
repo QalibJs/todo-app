@@ -6,7 +6,7 @@ class NoteCubit extends Cubit<int> {
 
   TextEditingController noteController = TextEditingController();
   TextEditingController titleController = TextEditingController();
-
+  
   @override
   Future<void> close() {
     noteController.clear();

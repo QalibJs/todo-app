@@ -36,7 +36,7 @@ class AppBoxDecoration {
       );
 
   static BoxDecoration  addButton(context) => BoxDecoration(
-        border: Border.all(color: Theme.of(context).colorScheme.background),
+        border: Border.all(color: Theme.of(context).colorScheme.primary),
         borderRadius: BorderRadius.circular(50),
       );
   static BoxDecoration get noteBoxes => BoxDecoration(

@@ -5,5 +5,4 @@ final locator = GetIt.instance;
 
 void setUp() {
   locator.registerLazySingleton<Dio>(() => Dio());
-  
 }
