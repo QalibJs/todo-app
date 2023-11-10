@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo/app/home/widgets/home_grid_view_widget.dart';
+import '../widgets/home_grid_view_widget.dart';
 import '../widgets/home_header_widget.dart';
 
 class HomeScreen extends StatelessWidget {

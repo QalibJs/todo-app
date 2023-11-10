@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-import 'package:todo/constant/app_box_decoration.dart';
-import 'package:todo/constant/app_paddings.dart';
-import 'package:todo/constant/app_text.dart';
-import 'package:todo/constant/app_text_style.dart';
+import '../../../constant/app_box_decoration.dart';
+import '../../../constant/app_paddings.dart';
+import '../../../constant/app_text.dart';
+import '../../../constant/app_text_style.dart';
 
 class HomeHiWidget extends StatelessWidget {
   const HomeHiWidget({super.key});

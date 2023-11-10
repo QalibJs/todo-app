@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todo/constant/app_colors.dart';
-import 'package:todo/constant/app_text_style.dart';
+import '../../../constant/app_colors.dart';
+import '../../../constant/app_text_style.dart';
 
 class HomeNotesWidget extends StatelessWidget {
   final String datas;

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../extension/context_extension.dart';
 import '../../../constant/app_box_decoration.dart';
 
 class HomeDividerWidget extends StatelessWidget {
@@ -7,7 +8,7 @@ class HomeDividerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width,
+      width: context.width,
       height: 1,
       decoration: AppBoxDecoration.gradientBox,
     );

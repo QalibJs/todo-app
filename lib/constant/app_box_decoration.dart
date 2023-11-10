@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo/constant/app_colors.dart';
+import 'app_colors.dart';
 
 class AppBoxDecoration {
   AppBoxDecoration._();

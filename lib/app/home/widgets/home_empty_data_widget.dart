@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-import 'package:todo/constant/app_assets.dart';
-import 'package:todo/constant/app_box_decoration.dart';
-import 'package:todo/constant/app_sized_box.dart';
-import 'package:todo/constant/app_text.dart';
-import 'package:todo/constant/app_text_style.dart';
+import '../../../constant/app_assets.dart';
+import '../../../constant/app_box_decoration.dart';
+import '../../../constant/app_sized_box.dart';
+import '../../../constant/app_text.dart';
+import '../../../constant/app_text_style.dart';
 
 class HomeEmptyDataWidget extends StatelessWidget {
   const HomeEmptyDataWidget({super.key});

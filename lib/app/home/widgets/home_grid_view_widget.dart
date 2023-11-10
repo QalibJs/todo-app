@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:todo/app/home/widgets/home_empty_data_widget.dart';
-import 'package:todo/app/home/widgets/home_grid_tile_widget.dart';
-import 'package:todo/app/note/screens/note_screen.dart';
-import 'package:todo/constant/app_navigator.dart';
-import 'package:todo/cubit/notes/note_cubit.dart';
-import 'package:todo/data/model/home_model.dart';
+import 'home_empty_data_widget.dart';
+import 'home_grid_tile_widget.dart';
+import '../../note/screens/note_screen.dart';
+import '../../../constant/app_navigator.dart';
+import '../../../cubit/notes/note_cubit.dart';
+import '../../../data/model/home_model.dart';
 
 class HomeGridViewWidget extends StatelessWidget {
   const HomeGridViewWidget({super.key});

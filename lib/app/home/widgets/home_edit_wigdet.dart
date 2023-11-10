@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:todo/constant/app_box_decoration.dart';
-import 'package:todo/constant/app_colors.dart';
-import 'package:todo/constant/app_paddings.dart';
-import 'package:todo/constant/app_text_style.dart';
+import '../../../constant/app_box_decoration.dart';
+import '../../../constant/app_colors.dart';
+import '../../../constant/app_paddings.dart';
+import '../../../constant/app_text_style.dart';
 
 class HomeEditWidget extends StatelessWidget {
   final String title;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:todo/constant/app_input_style_widget.dart';
-import 'package:todo/constant/app_text_style.dart';
+import '../../constant/app_input_style_widget.dart';
+import '../../constant/app_text_style.dart';
 
 class GlobalInputWidget extends StatefulWidget {
   final String hintText;

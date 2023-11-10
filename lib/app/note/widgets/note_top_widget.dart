@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todo/constant/app_text.dart';
-import 'package:todo/constant/app_text_style.dart';
+import '../../../constant/app_text.dart';
+import '../../../constant/app_text_style.dart';
 
 class NoteTopWidget extends StatelessWidget {
   const NoteTopWidget({super.key});

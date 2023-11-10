@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
-import 'package:todo/cubit/notes/note_cubit.dart';
-import 'package:todo/theme/theme.dart';
+import 'cubit/notes/note_cubit.dart';
+import 'theme/theme.dart';
 import 'app/home/screen/home_screen.dart';
 
 class MyApp extends StatelessWidget {

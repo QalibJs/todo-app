@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo/constant/app_colors.dart';
+import '../constant/app_colors.dart';
 
 // light mode
 ThemeData lightMode = ThemeData(

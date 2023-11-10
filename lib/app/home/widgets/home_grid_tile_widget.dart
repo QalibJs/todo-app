@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:todo/app/home/widgets/home_edit_wigdet.dart';
-import 'package:todo/app/home/widgets/home_notes_widget.dart';
+import 'home_edit_wigdet.dart';
+import 'home_notes_widget.dart';
 
-import 'package:todo/constant/app_box_decoration.dart';
-import 'package:todo/constant/app_paddings.dart';
-import 'package:todo/constant/app_sized_box.dart';
-import 'package:todo/data/model/home_model.dart';
+import '../../../constant/app_box_decoration.dart';
+import '../../../constant/app_paddings.dart';
+import '../../../constant/app_sized_box.dart';
+import '../../../data/model/home_model.dart';
 
 class HomeGridTileWidget extends StatelessWidget {
   final String datas;
