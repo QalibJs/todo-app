@@ -12,11 +12,9 @@ class NoteInputWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     NoteCubit noteCubit = context.watch<NoteCubit>();
     return Expanded(
-      
       child: SizedBox(
         width: context.width,
         child: GlobalInputWidget(
-          
           controller: noteCubit.noteController,
           hintText: AppTexts.write,
           maxLines: 50,

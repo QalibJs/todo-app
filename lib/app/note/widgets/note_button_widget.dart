@@ -20,7 +20,7 @@ class NoteButtonWidget extends StatelessWidget {
         ),
         child: Text(
           AppTexts.add,
-          style: AppTextStyle.buttonText,
+          style: AppTextStyle.buttonText(context),
         ),
         onPressed: () {},
       ),

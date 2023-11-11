@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-import 'app_colors.dart';
 
 class AppTextStyle {
   AppTextStyle._();
@@ -27,10 +26,15 @@ class AppTextStyle {
         fontWeight: FontWeight.bold,
         color: Theme.of(context).colorScheme.primary,
       );
-  static TextStyle get buttonText => TextStyle(
+  static TextStyle faceId(context) => TextStyle(
+        fontSize: 12.5.sp,
+        fontWeight: FontWeight.bold,
+        color: Theme.of(context).colorScheme.primary,
+      );
+  static TextStyle  buttonText(context) => TextStyle(
         fontSize: 14.5.sp,
         fontWeight: FontWeight.bold,
-        color: AppColors.white,
+        color: Theme.of(context).colorScheme.background,
       );
   static TextStyle overFlowedHeaderNotes(context) => TextStyle(
         fontSize: 14.5.sp,

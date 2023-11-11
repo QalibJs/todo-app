@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
+import 'package:todo/app/auth/screen/auth_screen.dart';
+import 'package:todo/cubit/auth/auth_cubit.dart';
 import 'cubit/notes/note_cubit.dart';
 import 'theme/theme.dart';
-import 'app/home/screen/home_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -21,13 +22,16 @@ class MyApp extends StatelessWidget {
             BlocProvider(
               create: (context) => NoteCubit(),
             ),
+            BlocProvider(
+              create: (context) => AuthCubit(),
+            ),
           ],
           child: MaterialApp(
             debugShowCheckedModeBanner: false,
             title: 'Flutter Demo',
             theme: lightMode,
             darkTheme: darkMode,
-            home: const HomeScreen(),
+            home: const AuthScreen(),
           ),
         );
       },
