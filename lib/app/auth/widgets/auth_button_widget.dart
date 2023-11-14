@@ -1,5 +1,4 @@
 // ignore_for_file: use_build_context_synchronously
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo/app/home/screen/home_screen.dart';
@@ -21,9 +20,11 @@ class AuthButtonWidget extends StatelessWidget {
         final auth = await LocalAuthService.authenticate();
         authCubit.checkAuth(auth);
         if (authCubit.isAuth == true) {
-          AppNavigators.go(context, const HomeScreen());
+          AppNavigators.go(
+            context,
+            const HomeScreen(),
+          );
         }
-       
       },
       child: Container(
         width: context.width,
@@ -37,16 +38,3 @@ class AuthButtonWidget extends StatelessWidget {
     );
   }
 }
-// GlobalButtonWidget(
-//       text: "text",
-//       onPressed: () async {
-//         final auth = await LocalAuthService.authenticate();
-//         authCubit.checkAuth(auth);
-//         if (authCubit.isAuth == true) {
-//           AppNavigators.go(context, const HomeScreen());
-//         }
-//         if (authCubit.isAuth == false) {
-//           print("error");
-//         }
-//       },
-//     );

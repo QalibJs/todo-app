@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../../constant/app_text.dart';
 import '../../../cubit/notes/note_cubit.dart';
 import '../../../extension/context_extension.dart';

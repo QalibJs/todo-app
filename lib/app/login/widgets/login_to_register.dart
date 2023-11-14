@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:todo/app/register/screen/register.dart';
-import 'package:todo/constant/app_colors.dart';
-import 'package:todo/constant/app_navigator.dart';
-import 'package:todo/constant/app_text.dart';
-import 'package:todo/constant/app_text_style.dart';
+import '../../register/screen/register.dart';
+import '../../../constant/app_colors.dart';
+import '../../../constant/app_navigator.dart';
+import '../../../constant/app_text.dart';
+import '../../../constant/app_text_style.dart';
 
 class LoginToRegister extends StatelessWidget {
   const LoginToRegister({super.key});

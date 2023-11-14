@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todo/constant/app_text_style.dart';
+import '../constant/app_text_style.dart';
 
 
 class GlobalButtonWidget extends StatelessWidget {

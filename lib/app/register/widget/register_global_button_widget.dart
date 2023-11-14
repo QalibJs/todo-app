@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todo/constant/app_paddings.dart';
-import 'package:todo/global/global_button_widget.dart';
+import '../../../constant/app_paddings.dart';
+import '../../../global/global_button_widget.dart';
 
 class RegisterButtonWidget extends StatelessWidget {
   const RegisterButtonWidget({super.key});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
-import 'package:todo/app/register/screen/register.dart';
-import 'package:todo/cubit/auth/auth_cubit.dart';
+import 'app/register/screen/register.dart';
+import 'cubit/auth/auth_cubit.dart';
 import 'cubit/notes/note_cubit.dart';
 import 'theme/theme.dart';
 

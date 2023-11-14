@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
+
 import '../../../constant/app_box_decoration.dart';
 import '../../../constant/app_paddings.dart';
 import '../../../constant/app_text.dart';

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+
+import '../../../constant/app_paddings.dart';
 import 'note_button_widget.dart';
 import 'note_input_widget.dart';
 import 'note_top_widget.dart';
-import '../../../constant/app_paddings.dart';
 
 class NoteFullWidget extends StatelessWidget {
   const NoteFullWidget({super.key});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:todo/app/register/widget/register_button_widget.dart';
-import 'package:todo/app/register/widget/register_global_button_widget.dart';
-import 'package:todo/app/register/widget/register_top_text.dart';
-import 'package:todo/constant/app_paddings.dart';
+import '../widget/register_button_widget.dart';
+import '../widget/register_global_button_widget.dart';
+import '../widget/register_top_text.dart';
+import '../../../constant/app_paddings.dart';
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
   @override

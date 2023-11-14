@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:simple_gradient_text/simple_gradient_text.dart';
-import 'package:todo/constant/app_colors.dart';
-import 'package:todo/constant/app_text.dart';
+import '../../../constant/app_colors.dart';
+import '../../../constant/app_text.dart';
 
 class RegisterTopText extends StatelessWidget {
   const RegisterTopText({super.key});

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../note/screens/note_screen.dart';
+
 import '../../../constant/app_box_decoration.dart';
 import '../../../constant/app_navigator.dart';
 import '../../../constant/app_paddings.dart';
 import '../../../constant/app_text.dart';
 import '../../../constant/app_text_style.dart';
 import '../../../cubit/notes/note_cubit.dart';
+import '../../note/screens/note_screen.dart';
 
 class HomeSecondHeaderWidget extends StatelessWidget {
   const HomeSecondHeaderWidget({super.key});
