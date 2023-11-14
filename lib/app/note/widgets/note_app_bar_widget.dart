@@ -19,7 +19,7 @@ class NoteAppBarWidget extends StatelessWidget {
           width: context.width,
           child: GlobalInputWidget(
             controller: noteCubit.titleController,
-            hintText: AppTexts.title,
+            hintText: AppTexts.title, isPassword: false,
           ),
         ),
         Container(

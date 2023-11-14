@@ -10,8 +10,6 @@ class LocalAuthService {
 
   static Future<bool> authenticate() async {
     try {
-      print("isledi");
-
       if (!await canAuth()) return false;
 
       return await auth.authenticate(
@@ -23,7 +21,6 @@ class LocalAuthService {
         ),
       );
     } catch (e) {
-      print("${e} jhacvjhbcjasb");
       return false;
     }
   }

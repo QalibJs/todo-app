@@ -23,9 +23,7 @@ class AuthButtonWidget extends StatelessWidget {
         if (authCubit.isAuth == true) {
           AppNavigators.go(context, const HomeScreen());
         }
-        if (authCubit.isAuth == false) {
-          print("error");
-        }
+       
       },
       child: Container(
         width: context.width,

@@ -3,14 +3,14 @@ import 'package:flutter/services.dart';
 import '../../constant/app_input_style_widget.dart';
 import '../../constant/app_text_style.dart';
 
-class GlobalInputWidget extends StatefulWidget {
+class GlobalInputWidget extends StatelessWidget {
   final String hintText;
   final Widget? suffixIcon;
-  final int? maxLines;
   final Widget? prefixIcon;
   final TextEditingController? controller;
   final TextInputType? inputType;
   final String? Function(String?)? validator;
+  final bool isPassword;
   final List<TextInputFormatter>? inputFormatters;
   final void Function()? onTap;
   const GlobalInputWidget({
@@ -23,32 +23,25 @@ class GlobalInputWidget extends StatefulWidget {
     this.validator,
     this.inputFormatters,
     this.onTap,
-    this.maxLines,
+    required this.isPassword,
   }) : super(key: key);
 
   @override
-  State<GlobalInputWidget> createState() => _GlobalInputWidgetState();
-}
-
-class _GlobalInputWidgetState extends State<GlobalInputWidget> {
-  @override
   Widget build(BuildContext context) {
     return TextFormField(
-      
-      maxLines: widget.maxLines,
       style: AppTextStyle.smallText(context),
-      onTap: () => widget.onTap,
-      obscuringCharacter: "*",
-      inputFormatters: widget.inputFormatters,
-      keyboardType: widget.inputType,
-      validator: (value) => widget.validator!(value),
-      controller: widget.controller,
+      onTap: () => onTap,
+      obscureText: isPassword ? true : false,
+      inputFormatters: inputFormatters,
+      keyboardType: inputType,
+      validator: (value) => validator!(value),
+      controller: controller,
       textInputAction: TextInputAction.done,
       cursorColor: Theme.of(context).colorScheme.primary,
       decoration: InputDecoration(
         hintStyle: AppTextStyle.smallText(context),
-        prefixIcon: widget.prefixIcon,
-        hintText: widget.hintText,
+        prefixIcon: prefixIcon,
+        hintText: hintText,
         border: AppInputStyleWidget.boder,
       ),
     );

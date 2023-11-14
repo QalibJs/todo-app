@@ -15,9 +15,10 @@ class NoteInputWidget extends StatelessWidget {
       child: SizedBox(
         width: context.width,
         child: GlobalInputWidget(
+          isPassword: false,
           controller: noteCubit.noteController,
           hintText: AppTexts.write,
-          maxLines: 50,
+          // maxLines: 50,
         ),
       ),
     );
