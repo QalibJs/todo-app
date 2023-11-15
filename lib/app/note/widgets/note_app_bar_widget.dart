@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:todo/app/note/widgets/input_note.dart';
 import '../../../constant/app_box_decoration.dart';
-import '../../../constant/app_text.dart';
 import '../../../cubit/notes/note_cubit.dart';
 import '../../../extension/context_extension.dart';
-import '../../../global/widgets/global_input_widge.dart';
 
 class NoteAppBarWidget extends StatelessWidget {
   const NoteAppBarWidget({super.key});
@@ -15,11 +14,10 @@ class NoteAppBarWidget extends StatelessWidget {
     return Column(
       children: [
         SizedBox(
-          
           width: context.width,
-          child: GlobalInputWidget(
+          child: InputNote(
             controller: noteCubit.titleController,
-            hintText: AppTexts.title, isPassword: false,
+            maxLines: 1,
           ),
         ),
         Container(

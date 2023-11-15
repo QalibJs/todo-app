@@ -7,4 +7,9 @@ class AppNavigators {
         context,
         MaterialPageRoute(builder: (context) => widget),
       );
+  static goDelete(context, widget) => Navigator.pushAndRemoveUntil(
+        context,
+        MaterialPageRoute(builder: (context)=> widget),
+        (route) => false,
+      );
 }

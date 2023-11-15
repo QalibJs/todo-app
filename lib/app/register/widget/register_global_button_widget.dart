@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:todo/app/home/screen/home_screen.dart';
+import 'package:todo/constant/app_navigator.dart';
+import 'package:todo/constant/app_text.dart';
+import 'package:todo/cubit/auth/auth_cubit.dart';
 import '../../../constant/app_paddings.dart';
 import '../../../global/global_button_widget.dart';
 
@@ -7,9 +12,20 @@ class RegisterButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    AuthCubit authCubit = context.watch<AuthCubit>();
     return Padding(
       padding: AppPaddings.tb12,
-      child: const GlobalButtonWidget(text: 'register'),
+      child: GlobalButtonWidget(
+        text: AppTexts.register,
+        onPressed: () {
+          if (authCubit.registerKey.currentState!.validate()) {
+            AppNavigators.goDelete(
+              context,
+              const HomeScreen(),
+            );
+          }
+        },
+      ),
     );
   }
 }

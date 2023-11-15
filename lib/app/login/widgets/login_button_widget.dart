@@ -13,21 +13,18 @@ class LoginButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     AuthCubit authCubit = context.watch<AuthCubit>();
-    return Form(
-      key: authCubit.key,
-      child: Padding(
-        padding: AppPaddings.tb12,
-        child: GlobalButtonWidget(
-          text: AppTexts.login,
-          onPressed: () {
-            if (authCubit.key.currentState!.validate()) {
-              AppNavigators.go(
-                context,
-                const HomeScreen(),
-              );
-            }
-          },
-        ),
+    return Padding(
+      padding: AppPaddings.tb12,
+      child: GlobalButtonWidget(
+        text: AppTexts.login,
+        onPressed: () {
+          if (authCubit.loginKey.currentState!.validate()) {
+            AppNavigators.goDelete(
+              context,
+              const HomeScreen(),
+            );
+          }
+        },
       ),
     );
   }

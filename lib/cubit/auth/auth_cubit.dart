@@ -6,7 +6,8 @@ class AuthCubit extends Cubit<int> {
 
   bool isAuth = false;
 
-  GlobalKey<FormState> key = GlobalKey<FormState>();
+  GlobalKey<FormState> loginKey = GlobalKey<FormState>();
+  GlobalKey<FormState> registerKey = GlobalKey<FormState>();
   TextEditingController loginUsernameController = TextEditingController();
   TextEditingController loginPasswordController = TextEditingController();
 

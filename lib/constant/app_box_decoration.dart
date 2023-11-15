@@ -15,11 +15,13 @@ class AppBoxDecoration {
           ],
         ),
       );
+
   static BoxDecoration imgDec(String asset) => BoxDecoration(
         image: DecorationImage(
           image: AssetImage(asset),
         ),
       );
+
   static BoxDecoration get button => BoxDecoration(
         borderRadius: BorderRadius.circular(12),
         gradient: LinearGradient(
@@ -30,12 +32,12 @@ class AppBoxDecoration {
         ),
       );
 
-  static BoxDecoration  ppDec(context) => BoxDecoration(
+  static BoxDecoration ppDec(context) => BoxDecoration(
         color: Theme.of(context).colorScheme.background,
         borderRadius: BorderRadius.circular(50),
       );
 
-  static BoxDecoration  addButton(context) => BoxDecoration(
+  static BoxDecoration addButton(context) => BoxDecoration(
         border: Border.all(color: Theme.of(context).colorScheme.primary),
         borderRadius: BorderRadius.circular(50),
       );

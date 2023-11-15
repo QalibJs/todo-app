@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:todo/app/register/widget/register_divider_widget.dart';
 import 'package:todo/cubit/auth/auth_cubit.dart';
 import 'login_to_register.dart';
 import '../../../constant/app_sized_box.dart';
@@ -12,34 +13,39 @@ class LoginInputWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     AuthCubit authCubit = context.watch<AuthCubit>();
-    return Column(
-      children: [
-        GlobalInputWidget(
-          hintText: AppTexts.username,
-          isPassword: false,
-          controller: authCubit.loginUsernameController,
-          validator: (value) {
-            if (value!.isEmpty) {
-              return 'fill the blank';
-            }
-            return null;
-          },
-        ),
-        AppSizedBox.h10,
-        GlobalInputWidget(
-          controller: authCubit.loginPasswordController,
-          hintText: AppTexts.password,
-          isPassword: true,
-          validator: (value) {
-            if (value!.isEmpty) {
-              return 'fill the blank';
-            }
-            return null;
-          },
-        ),
-        AppSizedBox.h10,
-        const LoginToRegister()
-      ],
+    return Form(
+      key: authCubit.loginKey,
+      child: Column(
+        children: [
+          GlobalInputWidget(
+            hintText: AppTexts.username,
+            isPassword: false,
+            controller: authCubit.loginUsernameController,
+            validator: (value) {
+              if (value!.isEmpty) {
+                return 'fill the blank';
+              }
+              return null;
+            },
+          ),
+          const RegisterDividerWidget(),
+          AppSizedBox.h10,
+          GlobalInputWidget(
+            controller: authCubit.loginPasswordController,
+            hintText: AppTexts.password,
+            isPassword: true,
+            validator: (value) {
+              if (value!.isEmpty) {
+                return 'fill the blank';
+              }
+              return null;
+            },
+          ),
+          const RegisterDividerWidget(),
+          AppSizedBox.h10,
+          const LoginToRegister()
+        ],
+      ),
     );
   }
 }

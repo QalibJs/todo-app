@@ -13,5 +13,6 @@ class AppTexts {
   static String get title => "Title";
   static String get add => "Add";
   static String get username => "Username";
+  static String get register => "Register";
   static String get password => "Password";
 }

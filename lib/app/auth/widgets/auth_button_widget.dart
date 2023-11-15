@@ -6,7 +6,7 @@ import 'package:todo/constant/app_navigator.dart';
 import 'package:todo/constant/app_paddings.dart';
 import 'package:todo/constant/app_text_style.dart';
 import 'package:todo/cubit/auth/auth_cubit.dart';
-import 'package:todo/data/service/local_auth_service.dart';
+import 'package:todo/data/service/api/local_auth_service.dart';
 import 'package:todo/extension/context_extension.dart';
 
 class AuthButtonWidget extends StatelessWidget {

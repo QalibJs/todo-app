@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import '../../locator/locator.dart';
+import 'package:todo/locator/locator.dart';
 
 class HomePostService {
   static Dio dio = locator.get<Dio>();
