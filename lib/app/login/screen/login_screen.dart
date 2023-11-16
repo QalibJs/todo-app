@@ -11,6 +11,7 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.background,
       appBar: AppBar(
+        foregroundColor: Theme.of(context).colorScheme.background,
         backgroundColor: Theme.of(context).colorScheme.background,
         elevation: 0,
         title: const RegisterTopText(),

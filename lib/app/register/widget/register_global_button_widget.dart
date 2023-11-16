@@ -19,6 +19,7 @@ class RegisterButtonWidget extends StatelessWidget {
         text: AppTexts.register,
         onPressed: () {
           if (authCubit.registerKey.currentState!.validate()) {
+            authCubit.saveState("note", 1);
             AppNavigators.goDelete(
               context,
               const HomeScreen(),

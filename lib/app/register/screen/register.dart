@@ -10,6 +10,7 @@ class RegisterScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.background,
+        foregroundColor: Theme.of(context).colorScheme.background,
         title: const RegisterTopText(),
         centerTitle: true,
         elevation: 0,

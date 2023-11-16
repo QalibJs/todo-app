@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:todo/data/service/hive/hive_service.dart';
 
 class AuthCubit extends Cubit<int> {
   AuthCubit() : super(0);
@@ -18,6 +19,12 @@ class AuthCubit extends Cubit<int> {
 
   void checkAuth(bool auth) {
     isAuth = auth;
+  }
+
+  void saveState(String key, int value) {
+    HiveService.instance.then(
+      (hive) => hive.saveData(key, value),
+    );
   }
 
   @override

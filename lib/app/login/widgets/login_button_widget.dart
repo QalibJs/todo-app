@@ -18,6 +18,7 @@ class LoginButtonWidget extends StatelessWidget {
       child: GlobalButtonWidget(
         text: AppTexts.login,
         onPressed: () {
+          authCubit.saveState("note", 1);
           if (authCubit.loginKey.currentState!.validate()) {
             AppNavigators.goDelete(
               context,
